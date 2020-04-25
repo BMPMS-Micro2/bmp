@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, NavLink} from "react-router-dom";
 
 class NavBar extends Component{
 
@@ -9,9 +10,8 @@ class NavBar extends Component{
                 <div className = "container ">
                     <a className = {"brand-logo "}><h1>BMP Monitoring App</h1></a>
                     <ul className = "list-inline">
-                        <li className ="list-inline-item"><a href="/home">Home</a> </li>
-                        <li className ="list-inline-item"><a href="/about">About</a> </li>
-                        <li className ="list-inline-item"><a href ="/experiment">Experiment</a> </li>
+                        <li className ="list-inline-item"><Link to="/home">Home</Link> </li>
+                        <li className ="list-inline-item"><Link to="/about">About</Link> </li>
                     </ul>
 
                 </div>

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26ef85d6-fd2e-4425-937e-da004b899e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experiment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experiment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,11 @@
       <workItem from="1587503502915" duration="2462000" />
       <workItem from="1587511444892" duration="4046000" />
       <workItem from="1587515509306" duration="3592000" />
-      <workItem from="1587656036989" duration="340000" />
+      <workItem from="1587656036989" duration="1194000" />
+      <workItem from="1587658324124" duration="273000" />
+      <workItem from="1587658608774" duration="682000" />
+      <workItem from="1587684031628" duration="23000" />
+      <workItem from="1587826440687" duration="880000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Push">
       <created>1587398300353</created>
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587500327704</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Experiment component visibly working">
+      <created>1587656571356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587656571356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +118,9 @@
     <MESSAGE value="Empty non usable classes" />
     <MESSAGE value="Initial Experiment Page" />
     <MESSAGE value="Added Components folder and tow components inside" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Components folder and tow components inside" />
+    <MESSAGE value="Experiment component visibly working" />
+    <MESSAGE value="Upload pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1587398008378">
@@ -131,14 +139,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587399693142" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1587500327087">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1587656614837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587500327087" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1587398762330">
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587656614837" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1587684051143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587398762330" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587684051143" />
     <state x="639" y="306" key="Github.ShareDialog" timestamp="1587398836505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
