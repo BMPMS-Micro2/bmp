@@ -3,6 +3,8 @@ import NavBar from "./components/navBar";
 import {BrowserRouter, Route} from "react-router-dom";
 import Menu from "./components/menu";
 import Experiment from "./components/experiment";
+import Login from "./components/login";
+import {Switch} from "react-router";
 
 class App extends Component{
     render() {
@@ -10,8 +12,12 @@ class App extends Component{
             <BrowserRouter>
                 <div className="App">
                     <NavBar />
-                    <Route path='/home' component={Menu} />
-                    <Route path='/experiment' component={Experiment} />
+                    <Switch>
+                        <Route path='/home' component={Menu} />
+                        <Route path='/experiment' component={Experiment} />
+                        <Route path='/login' component={Login} />
+                    </Switch>
+
                 </div>
             </BrowserRouter>
         );
