@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDropdown from "react-dropdown";
 import 'react-dropdown/style.css';
 import Reactor from "./reactor";
+import Checkbox from "react-simple-checkbox";
 
 class Experiment extends Component{
     state = {
@@ -52,9 +53,8 @@ class Experiment extends Component{
                             <Reactor></Reactor>
                             <Reactor></Reactor>
                     </ul>
-
-                <label className={"m-2"}>Description: </label>
-                    <textarea className="form-control" type={"text"} onChange={this.handleDescription} rows={"3"} /><br></br>
+                    <Checkbox/>
+                    <br></br>
                 <button onClick={this.handleStartExperiment} className={"btn bg-info text-white m-2"}>Start Experiment</button>
 
                     <button className="btn bg-info text-white m-2" type="button" data-toggle="collapse"
@@ -64,9 +64,7 @@ class Experiment extends Component{
 
                     <div className="collapse" id="collapseNewSubstrate">
                         <form onSubmit={this.handleNewSubstrate}>
-                            <div className="card card-body">
-                                <input type="text"/>
-                            </div>
+                            <input type="text"/>
                         </form>
                     </div>
 
