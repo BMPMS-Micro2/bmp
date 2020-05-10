@@ -9,9 +9,10 @@ class NavBar extends Component{
             <nav className="navbar navbar-dark bg-info ">
                 <div className="row col-12 d-flex justify-content-center text-white">
                     <a className = {"brand-logo "}><h1>BMP Monitoring App</h1></a>
-                    <ul className = "list-inline">
-                        <li className ="list-inline-item "><Link to="/home">Home</Link> </li>
-                        <li className ="list-inline-item"><Link to="/about">About</Link> </li>
+                    <ul className = "list-inline " aria>
+                        <li className ="list-inline-item float-md-left "><Link to="/home" style={{ color: '#FFF' }}>Home</Link> </li>
+                        <li className ="list-inline-item float-md-left"><Link to="/about" style={{ color: '#FFF' }}>About</Link> </li>
+                        <li className ="list-inline-item float-md-left"><Link to="/experiment-assigment" style={{ color: '#FFF' }}>Assignments</Link></li>
                     </ul>
 
                 </div>
@@ -20,5 +21,6 @@ class NavBar extends Component{
         );
     }
 }
+
 
 export default NavBar;

@@ -11,8 +11,10 @@ class Menu extends Component{
                 <Link to="/experiment">
                      <button className={"btn bg-info text-white m-3"}>Start an Experiment</button>
                 </Link>
-                <button className={"btn bg-info text-white m-3"}>Experiment Tables</button>
-            </div>
+                 <Link to="/table">
+                     <button className={"btn bg-info text-white m-3"}>Experiment Tables</button>
+                 </Link>
+                 </div>
 
 
         );
