@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import {Link, Route, Router, Switch} from "react-router-dom";
 import Experiment from "./experiment";
+import LineGraph from "./lineGraph";
 
 class Menu extends Component{
     render() {
         return (
             <div className="container">
                 <h2>Welcome to the BMP monitoring app!</h2>
-                <label className={"m-3"}>Experiments running:  None</label><label>Last Experiments:  None</label><br/><br/>
+                <label className={"m-3"}>Experiments running:  None</label><label>Last Experiments:  1</label><br/>
+                <LineGraph></LineGraph><br/>
                 <Link to="/experiment">
                      <button className={"btn bg-info text-white m-3"}>Start an Experiment</button>
                 </Link>

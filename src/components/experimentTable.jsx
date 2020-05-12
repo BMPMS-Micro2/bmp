@@ -15,9 +15,6 @@ class ExperimentTable extends Component{
         }
     }
 
-     state = {}
-
-
     createData(id, date,temp, user, description) {
         return { id, date,temp, user,description };
     }
