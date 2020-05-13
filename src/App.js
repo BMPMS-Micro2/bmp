@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import NavBar from "./components/navBar";
 import {BrowserRouter, Route} from "react-router-dom";
 import Menu from "./components/menu";
-import Experiment from "./components/experiment";
+import ExperimentSetup from "./components/experimentSetup";
 import Login from "./components/login";
 import {Switch} from "react-router";
 import ExperimentTable from "./components/experimentTable";

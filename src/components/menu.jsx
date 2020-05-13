@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Link, Route, Router, Switch} from "react-router-dom";
-import Experiment from "./experiment";
+import ExperimentSetup from "./experimentSetup";
 import LineGraph from "./lineGraph";
 
 class Menu extends Component{

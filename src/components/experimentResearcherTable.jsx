@@ -96,7 +96,6 @@ Row.propTypes = {
   row: PropTypes.shape({
     date: PropTypes.string.isRequired,
     temp: PropTypes.number.isRequired,
-    fat: PropTypes.number.isRequired,
     users: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,

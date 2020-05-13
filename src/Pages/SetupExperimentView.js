@@ -1,13 +1,89 @@
-import React from "react";
-import Experiment from "../components/experiment";
+import React, {Component} from "react";
+import ExperimentSetup from "../components/experimentSetup";
+import {Box} from "@material-ui/core";
 
-const SetupExperimentView = () => {
-    return(
-        <div className="container">
-            <h1>Experiment Setup</h1>
-            <Experiment></Experiment>
-        </div>
-    );
+class SetupExperimentView extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            show: false,
+            substrates: ['lechuga', 'tomate', 'sopa']
+        }
+
+        this.toggleComp = this.toggleComp.bind(this);
+    }
+
+    toggleComp = () => {
+        const {show} = this.state
+        this.setState({show: !show})
+    }
+
+    addSubstrate = (substrate) => {
+        console.log(substrate);
+        let substrates = [...this.state.substrates, substrate];
+        this.setState({
+            substrates: substrates
+        })
+    }
+
+
+
+    handleStartExperiment = (e) => {
+
+    }
+
+    render() {
+        return (
+            <div className="container">
+                <h1>Experiment Setup</h1>
+                <span>{this.substrates}</span>
+                <ExperimentSetup></ExperimentSetup>
+                {this.state.show && <AddSubstrate addSubstrate={this.addSubstrate}/>}
+                {this.state.substrates}<br />
+                <button onClick={this.handleStartExperiment} className={"btn bg-info text-white m-2"}>Start Experiment</button>
+                <button onClick={this.toggleComp} className={"btn bg-info text-white m-2"}>Add New Substrate</button>
+            </div>
+        );
+    }
+}
+
+class AddSubstrate extends Component{
+
+    constructor(props) {
+        super(props);
+        this.state ={
+            newSubstrate: null
+        }
+
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        if(this.state.newSubstrate == null){
+            console.log("Box empty");
+        }
+        else{
+            this.props.addSubstrate(this.state.newSubstrate);
+        }
+    }
+
+    handleChange = (e) => {
+        console.log(e.target.value);
+        this.state.newSubstrate = e.target.value;
+    }
+
+    render() {
+        return (
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <label className={"m-2"}>Substrate to add:</label>
+                    <input onChange={this.handleChange} id={'substrate'} type={"text"}/>
+                    <button>Add</button>
+                </form>
+            </div>
+        );
+    }
 }
 
 export default SetupExperimentView;
