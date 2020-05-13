@@ -13,7 +13,7 @@ class Register extends Component{
                 username: '',
                 password: '',
                 email:'',
-                superadmin:''
+                super_admin:''
             },
             submitted: false
         };
@@ -25,15 +25,17 @@ class Register extends Component{
 
         this.setState({ submitted: true });
         const { user } = this.state;
-        user.superadmin = '0';
-        if (user.firstName && user.lastName && user.username && user.password && user.email) {
+        user.super_admin = '0';
+        if (user.first_Name && user.last_Name && user.username && user.password && user.email) {
             // this.props.register(user);
         }
     }
 
     render() {
+        const { registering  } = this.props;
+        const { user, submitted } = this.state;
         return (
-            <div className="col-md-6 col-md-offset-3">
+            <div className="card container col-6 login-card mt-2 justify-content-center hv-center">
                 <form>
                     <h2>New user? Register now!</h2>
                     <label>User:</label>
@@ -41,35 +43,35 @@ class Register extends Component{
                            className="form-control"
                            id="user"
                            placeholder="Username"
-                           value={this.state.username}
+                           value={user.username}
                     /><br/>
                     <label>Password:</label>
                     <input type="password"
                            className="form-control"
                            id="password"
                            placeholder="Password"
-                           value={this.state.password}
+                           value={user.password}
                     /><br/>
                     <label>First Name:</label>
                     <input type="text"
                            className="form-control"
                            id="first_name"
                            placeholder="First Name"
-                           value={this.state.first_Name}
+                           value={user.first_Name}
                     /><br/>
                     <label>Last Name:</label>
                     <input type="text"
                            className="form-control"
                            id="last_name"
                            placeholder="Last Name"
-                           value={this.state.last_Name}
+                           value={user.last_Name}
                     /><br/>
                     <label>Email:</label>
                     <input type="text"
                            className="form-control"
                            id="email"
                            placeholder="Email"
-                           value={this.state.email}
+                           value={user.email}
                     /><br/>
                     <Link to="/home">
                         <button type="submit" className="btn bg-info text-white container">Register</button>

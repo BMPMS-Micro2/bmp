@@ -5,13 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26ef85d6-fd2e-4425-937e-da004b899e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/LoginAndRegisterView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/register.jsx" afterDir="false" />
+    <list default="true" id="26ef85d6-fd2e-4425-937e-da004b899e60" name="Default Changelist" comment="added register component and login view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/LoginAndRegisterView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/LoginAndRegisterView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,8 @@
       <workItem from="1589226601255" duration="3245000" />
       <workItem from="1589238516066" duration="2342000" />
       <workItem from="1589249038073" duration="878000" />
-      <workItem from="1589326085673" duration="4754000" />
+      <workItem from="1589326085673" duration="4788000" />
+      <workItem from="1589334076417" duration="6053000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Push">
       <created>1587398300353</created>
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589075269264</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added register component and login view">
+      <created>1589331669763</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589331669763</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +205,8 @@
     <MESSAGE value="Added three reactors for startExperiment, prettified everything" />
     <MESSAGE value="Fix to reactor and experiment component" />
     <MESSAGE value="Added tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tables" />
+    <MESSAGE value="added register component and login view" />
+    <option name="LAST_COMMIT_MESSAGE" value="added register component and login view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1587398008378">
