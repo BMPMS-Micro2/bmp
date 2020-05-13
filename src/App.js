@@ -7,6 +7,7 @@ import {Switch} from "react-router";
 import ExperimentTable from "./components/experimentTable";
 import ExperimentTableView from "./Pages/ExperimentTableView";
 import SetupExperimentView from "./Pages/SetupExperimentView";
+import GraphView from "./Pages/GraphsView";
 import AssigmentResearcherView from "./Pages/AssigmentResearcherView";
 // import Redirect from "react-router/modules/Redirect";
 
@@ -17,11 +18,11 @@ class App extends Component{
                 <div className="App">
                     <NavBar />
                     <Switch>
-                        {/*<Redirect from="/" to ="/login"/>*/}
                         <Route path='/home' component={Menu} />
                         <Route path='/experiment' component={SetupExperimentView} />
-                        <Route path='/' component={LoginAndRegisterView} />
+                        <Route path='/login' component={LoginAndRegisterView} />
                         <Route path='/table' component={ExperimentTableView} />
+                        <Route path='/graph' component={GraphView} />
                         <Route path='/experiment-assigment' component={AssigmentResearcherView} />
                     </Switch>
                 </div>
