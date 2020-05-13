@@ -20,7 +20,7 @@ class Login extends Component{
         event.preventDefault();
         this.setState({ submitted: true });
         const { user } = this.state;
-        if (user.username && user.password && user.email) {
+        if (user.username && user.password) {
             // this.props.login(user);
         }
     }

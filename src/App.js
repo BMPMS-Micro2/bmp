@@ -9,6 +9,7 @@ import ExperimentTable from "./components/experimentTable";
 import ExperimentTableView from "./Pages/ExperimentTableView";
 import SetupExperimentView from "./Pages/SetupExperimentView";
 import AssigmentResearcherView from "./Pages/AssigmentResearcherView";
+// import Redirect from "react-router/modules/Redirect";
 
 class App extends Component{
     render() {
@@ -17,9 +18,10 @@ class App extends Component{
                 <div className="App">
                     <NavBar />
                     <Switch>
+                        {/*<Redirect from="/" to ="/login"/>*/}
                         <Route path='/home' component={Menu} />
                         <Route path='/experiment' component={SetupExperimentView} />
-                        <Route path='/login' component={LoginAndRegisterView} />
+                        <Route path='/' component={LoginAndRegisterView} />
                         <Route path='/table' component={ExperimentTableView} />
                         <Route path='/experiment-assigment' component={AssigmentResearcherView} />
                     </Switch>
