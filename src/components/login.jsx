@@ -9,7 +9,7 @@ class Login extends Component{
      }
     render() {
         return (
-            <div className="card container col-12 col-lg-4 login-card mt-2 justify-content-center hv-center">
+            <div className="ccol-md-6 col-md-offset-3 hv-center">
                 <form>
                     <h2>Welcome, Please Log In</h2>
                     <label>User:</label>

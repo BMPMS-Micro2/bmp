@@ -3,7 +3,7 @@ import NavBar from "./components/navBar";
 import {BrowserRouter, Route} from "react-router-dom";
 import Menu from "./components/menu";
 import Experiment from "./components/experiment";
-import Login from "./components/login";
+import LoginAndRegisterView from "./Pages/LoginAndRegisterView";
 import {Switch} from "react-router";
 import ExperimentTable from "./components/experimentTable";
 import ExperimentTableView from "./Pages/ExperimentTableView";
@@ -19,7 +19,7 @@ class App extends Component{
                     <Switch>
                         <Route path='/home' component={Menu} />
                         <Route path='/experiment' component={SetupExperimentView} />
-                        <Route path='/login' component={Login} />
+                        <Route path='/login' component={LoginAndRegisterView} />
                         <Route path='/table' component={ExperimentTableView} />
                         <Route path='/experiment-assigment' component={AssigmentResearcherView} />
                     </Switch>
