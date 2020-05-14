@@ -1,21 +1,20 @@
 import React, {Component} from "react";
-import lineGraph from "../components/lineGraph";
+import LineGraph from "../components/lineGraph";
 
 class GraphView extends Component{
 
     render() {
         return(
         <div className="container">
-            <lineGraph data={this.data}></lineGraph>
+            <LineGraph data={this.data}></LineGraph>
         </div>
         );
     }
 
-    data = [{exp_id: 1, exp_substrate: 'papa', xTime: '1:00', yPressure: 200, yTemp: 20},
-        {exp_id: 1, exp_substrate: 'papa', xTime: '2:00', yPressure: 300, yTemp: 23},
-        {exp_id: 1, exp_substrate: 'papa', xTime: '3:00', yPressure: 400, yTemp: 27},
-        {exp_id: 1, exp_substrate: 'papa', xTime: '4:00', yPressure: 500, yTemp: 31},
-        {exp_id: 1, exp_substrate: 'papa', xTime: '5:00', yPressure: 700, yTemp: 40},];
+    data = [{exp_id: 1, exp_substrate: 'papa', Time: '1:00', Pressure: 200, Temp: 20},
+        {exp_id: 1, exp_substrate: 'papa', Time: '2:00', Pressure: 300, Temp: 23},
+        {exp_id: 1, exp_substrate: 'papa', Time: '3:00', Pressure: 400, Temp: 27},
+        {exp_id: 1, exp_substrate: 'papa', Time: '4:00', Pressure: 500, Temp: 31},
+        {exp_id: 1, exp_substrate: 'papa', Time: '5:00', Pressure: 700, Temp: 40},];
 }
-
 export default GraphView;

@@ -8,6 +8,7 @@ import Login from "./components/login";
 import Reactor from "./components/reactor";
 import LineGraph from "./components/lineGraph";
 import LoginAndRegisterView from "./Pages/LoginAndRegisterView";
+import GraphView from "./Pages/GraphsView";
 
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App/>, document.getElementById('root'))
