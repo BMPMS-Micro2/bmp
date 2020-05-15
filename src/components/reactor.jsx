@@ -50,10 +50,10 @@ class Reactor extends Component{
                  <label>{this.props.name}</label>
                 <form>
                     <label className={"m-2"}>Select Substrate: </label>
-                    <ReactDropdown options={this.props.substrates} onChange={this.handleSubstrateDropdown} />
+                    <ReactDropdown value = {this.props.substrates[0]} options={this.props.substrates} onChange={this.handleSubstrateDropdown} />
                     <br></br>
                      <label className={"m-2"}>Select Particulate Size: </label>
-                    <ReactDropdown options={this.props.sizes} onChange={this.handleSizeDropdown} /><br></br>
+                    <ReactDropdown value={this.props.sizes[0]} options={this.props.sizes}  onChange={this.handleSizeDropdown} /><br></br>
                     <label className={"m-2"}>Reactor Description: </label>
                     <textarea className="form-control" type={"text"} onChange={this.handleDescription} rows={"3"} /><br></br>
                 </form>

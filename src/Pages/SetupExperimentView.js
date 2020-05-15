@@ -42,7 +42,6 @@ class SetupExperimentView extends Component {
                 <h1>Experiment Setup</h1>
                 <ExperimentSetup substrates = {this.state.substrates} sizes = {this.state.sizes}></ExperimentSetup>
                 {this.state.show && <AddSubstrate addSubstrate={this.addSubstrate}/>}
-                {this.state.substrates}<br />
                 <button onClick={this.handleStartExperiment} className={"btn bg-info text-white m-2"}>Start Experiment</button>
                 <button onClick={this.toggleComp} className={"btn bg-info text-white m-2"}>Add New Substrate</button>
             </div>
