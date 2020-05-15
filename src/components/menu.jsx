@@ -15,6 +15,7 @@ class Menu extends Component {
                     <button className={"btn bg-info text-white m-3"}>Experiment Tables</button>
                 </Link>
                 <Link to="/graph">
+
                     <button className={"btn bg-info text-white m-3"}>Graphs</button>
                 </Link>
             </div>
