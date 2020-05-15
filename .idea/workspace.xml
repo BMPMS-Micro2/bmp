@@ -6,10 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26ef85d6-fd2e-4425-937e-da004b899e60" name="Default Changelist" comment="moved graphs to separate page. not working">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/GraphsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/GraphsView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/lineGraph.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lineGraph.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
