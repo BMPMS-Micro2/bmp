@@ -20,7 +20,7 @@ class App extends Component{
                         {/*<Redirect from="/" to ="/login"/>*/}
                         <Route path='/home' component={Menu} />
                         <Route path='/experiment' component={SetupExperimentView} />
-                        <Route path='/' component={LoginAndRegisterView} />
+                        <Route path='/login' component={LoginAndRegisterView} />
                         <Route path='/table' component={ExperimentTableView} />
                         <Route path='/experiment-assigment' component={AssigmentResearcherView} />
                     </Switch>

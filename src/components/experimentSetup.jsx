@@ -47,8 +47,10 @@ class ExperimentSetup extends Component{
 
 
     render() {
+        console.log("Props", this.props);
         return (
             <div className={"container"}>
+
                 <form>
                     <label className={"m-2"}>Experiment ID: {this.state.date} </label>
                     <span className={"m-2"}>{this.state.id}</span>
@@ -57,9 +59,9 @@ class ExperimentSetup extends Component{
                     <ReactDropdown options={this.stations} value = {this.stations[0]} onChange={this.handleStation} /> <br/>
 
                     <ul className = "list-group list-group-horizontal">
-                            <Reactor name={'Reactor A'}></Reactor>
-                            <Reactor name={'Reactor B'}></Reactor>
-                            <Reactor name={'Reactor C'}></Reactor>
+                            <Reactor name={'Reactor A'} substrates = {this.props.substrates} sizes={this.props.sizes}></Reactor>
+                            <Reactor name={'Reactor B'} substrates = {this.props.substrates} sizes={this.props.sizes}></Reactor>
+                            <Reactor name={'Reactor C'} substrates = {this.props.substrates} sizes={this.props.sizes}></Reactor>
                     </ul>
                     <Checkbox/><label> All Reactors have same substrate</label>
                     <br/>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Select from 'react-select';
-
+import ReactDropdown from "react-dropdown";
 
 class Reactor extends Component{
     constructor(props) {
@@ -17,12 +17,7 @@ class Reactor extends Component{
         this.handleDescription = this.handleDescription.bind(this);
     }
 
-    substrates =[
-        {label:'Carrot', value:'Carrot'},
-        {label:'Celery', value:'Celery'},
-        {label:'Potato', value:'Potato'},
-        {label:'Broccoli', value:'Broccoli'}
-    ]
+    substrates = this.props.substrates
 
     handleDescription = (e) => {
         console.log("Worked (Description)")
@@ -49,15 +44,16 @@ class Reactor extends Component{
     }
 
     render() {
+        console.log(this.props.substrates)
         return (
             <div className={"card container col-12 col-lg-4 login-card mt-2 "}>
                  <label>{this.props.name}</label>
                 <form>
                     <label className={"m-2"}>Select Substrate: </label>
-                    <Select options={this.substrates} onChange={this.handleSubstrateDropdown} />
+                    <ReactDropdown options={this.props.substrates} onChange={this.handleSubstrateDropdown} />
                     <br></br>
                      <label className={"m-2"}>Select Particulate Size: </label>
-                    <Select  onChange={this.handleSizeDropdown} /><br></br>
+                    <ReactDropdown options={this.props.sizes} onChange={this.handleSizeDropdown} /><br></br>
                     <label className={"m-2"}>Reactor Description: </label>
                     <textarea className="form-control" type={"text"} onChange={this.handleDescription} rows={"3"} /><br></br>
                 </form>

@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import ExperimentSetup from "../components/experimentSetup";
-import {Box} from "@material-ui/core";
 
 class SetupExperimentView extends Component {
     constructor(props) {
@@ -8,8 +7,9 @@ class SetupExperimentView extends Component {
 
         this.state = {
             show: false,
-            substrates: ['lechuga', 'tomate', 'sopa']
-        }
+            substrates: ['Lettuce','Brocolli','Potato'],
+            sizes: ['small','medium', 'large']
+        };
 
         this.toggleComp = this.toggleComp.bind(this);
     }
@@ -27,18 +27,20 @@ class SetupExperimentView extends Component {
         })
     }
 
-
-
     handleStartExperiment = (e) => {
 
     }
 
+    stateReturn = () => {
+        return [...this.state]
+    }
+
     render() {
+
         return (
             <div className="container">
                 <h1>Experiment Setup</h1>
-                <span>{this.substrates}</span>
-                <ExperimentSetup></ExperimentSetup>
+                <ExperimentSetup substrates = {this.state.substrates} sizes = {this.state.sizes}></ExperimentSetup>
                 {this.state.show && <AddSubstrate addSubstrate={this.addSubstrate}/>}
                 {this.state.substrates}<br />
                 <button onClick={this.handleStartExperiment} className={"btn bg-info text-white m-2"}>Start Experiment</button>
