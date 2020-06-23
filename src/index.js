@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css'
-import ExperimentSetup from "./components/experimentSetup";
-import Menu from "./components/menu";
 import App from "./App";
-import Login from "./components/login";
-import Reactor from "./components/reactor";
-import LineGraph from "./components/lineGraph";
-import LoginAndRegisterView from "./Pages/LoginAndRegisterView";
-import GraphView from "./Pages/GraphsView";
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import rootReducer from "./reducers/rootReducer";
 
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+const store = createStore(rootReducer);
+
+ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'))

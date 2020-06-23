@@ -30,9 +30,9 @@ function createData(id, date,temp, user, description) {
     temp,
     user,
     users: [
-      { name: 'Enrique Gonzalez', date: '2010-08-05'},
-      { name: 'Luis Rivera', date: '2010-08-05' },
-      { name: 'Maria Novoa', date: '2010-08-05' },
+      { name: 'Luis R. Perez', date: '2020-01-03'},
+      { name: 'Javier Huertas ', date: '2020-01-05' },
+      { name: 'Luis Roman ', date: '2020-01-05' },
     ],
     description,
   };
@@ -107,11 +107,11 @@ Row.propTypes = {
 };
 
 const rows = [
-  createData('1', '2020-05-09', 26.0, 'Enrique Gonzalez', 'Un dia que me dio la gana'),
-  createData('2', '2020-05-09', 29.0, 'Enrique Gonzalez', 'Este dia estaba en regla'),
-  createData('3', '2020-05-09', 36.0, 'Enrique Gonzalez', 'Por eso hice muchos experimentos'),
-  createData('4', '2020-05-09', 33.0, 'Enrique Gonzalez', 'Mi matricula esta fea'),
-  createData('5', '2020-05-09', 26.0, 'Enrique Gonzalez', 'Y la tuya tambien'),
+  createData('1', '2020-01-03', 26.0, 'Luis R. Perez', 'Los substratos fueron extraidos de la finca alzamora'),
+  createData('2', '2020-01-16', 29.0, 'Enrique Gonzalez', 'Todos los particulados son del mismo tamaño'),
+  createData('3', '2020-02-01', 36.0, 'Javier Huertas', 'Se interrumpio el experimento dado a que no habia luz'),
+  createData('4', '2020-02-20', 33.0, 'Luis Roman', 'Verificar datos con los del experimento anterior'),
+  createData('5', '2020-03-09', 26.0, 'Enrique Gonzalez', 'Ultimo experimento antes de interrupcion por Covid-19'),
 ];
 
 export default function CollapsibleTable() {

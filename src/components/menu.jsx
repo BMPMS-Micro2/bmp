@@ -7,7 +7,7 @@ class Menu extends Component {
         return (
             <div className="container">
                 <h2>Welcome to the BMP monitoring app!</h2>
-                <label className={"m-3"}>Experiments running: None</label><label>Last Experiments: 1</label><br/>
+                <label className={"m-3"}>Experiments running: None</label><label>Last Experiments: 5</label><br/>
                 <Link to="/experiment">
                     <button className={"btn bg-info text-white m-3"}>Start an Experiment</button>
                 </Link>
